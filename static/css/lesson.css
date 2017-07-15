@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/*视频首页排列 start*/
+
+.book {
+    padding: 12px;
+    border-bottom: 1px solid gray;
+    box-shadow: 2px 2px 4px gray;
+}
+
+a {
+    color: blue;
+    font-size: 20px;
+}
+
+a span {
+    margin-left: 40px;
+    color: gray;
+    font-size: 16px;
+}
+
+
+/*视频首页排列 end*/
+
+.video {
+    float: left;
+}
+
+
+/*右侧视频列表 start*/
+
+.videolist {
+    float: right;
+    width: 300px;
+    height: 520px;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+
+.listitem ul {
+    margin-top: 10px;
+}
+
+.enter {
+    color: #fff;
+    background-color: #d2d2d2;
+}
+
+
+/*右侧视频列表 end*/

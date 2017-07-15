@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="zfor,在线,想法,设计,代码,zfor.org,源码资料,编程游戏,zfor 网站,code,想法,ui,deram" />
+    <meta name="description" content="zfor是一个免费共享的资料和游戏平台，从想法到设计之代码，zfor.org网站在逐步努力成为更好！zfor完善了游戏列表，网站资料交流..." />
+    <title>zfor 源码资料编程游戏平台</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" 　/>
+    <link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/game.css" />
+
+</head>
+
+<body>
+    <!--头部 start-->
+    <header>
+        <div class="top">
+
+            <div id="logo">
+                <a href="/"><img src="/static/img/logo.png" alt="zfor.org" title="首页" /></a>
+            </div>
+            <div class="menu nav">
+                <ul>
+                    <li><a href="/static/a/head/lesson.html"><span>教程</span></a></li>
+                    <li><a href="/static/a/head/note.html"><span>笔记</span></a></li>
+                    <li><a href="/static/a/head/test.html"><span>测试</span></a></li>
+                    <li><a href="/static/a/head/war.html"><span>实战</span></a></li>
+                </ul>
+            </div>
+
+            <div class="rightbar">
+                <a href="/static/a/head/publicity.html">网站公告</a>
+                <a href="/static/a/head/info.html">网站宣传</a>
+            </div>
+            <div class="user">
+                <button type="button" onclick="showBox()">注册/登陆</button>
+            </div>
+            <div class="event" id="login_box" style="display: none;">
+                <div class="login">
+                    <div class="title">
+                        <span class="t_txt">登录</span>
+                        <span class="del" onClick="deleteLogin()"><a href="#">X</a></span>
+                    </div>
+                    <form action="" method="post">
+                        <input type="text" name="" id="" value="" placeholder="请输入用户名" />
+                        <input type="text" name="" id="" value="" placeholder="请输入密码" />
+                        <div class="easy">
+                            <input type="checkbox" class="check" id="c" name="" value=""> <label for="c">下次自动登陆</label><span>忘记密码</span>
+                        </div>
+
+                        <input type="button" name="" id="" value="登录" class="btn" />
+
+                    </form>
+                </div>
+            </div>
+            <div class="bg_color" onClick="deleteLogin()" id="bg_filter" style="display: none;"></div>
+
+
+        </div>
+
+    </header>
+
+    <!--头部 end-->
+
+    <!--内容 start-->
+    <div class="contain">
+        <div class="view">
+            <div class="lists">
+                <div class="game game1">
+                    <h3>CodeCombat</h3>
+                    <img src="/static/img/game/game1.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度: <span></span><span></span><span></span> </p>
+                    <p class="desc">简介：CodeCombat 是一个 HTML5 角色扮演游戏(RPG),教你基本的编程概念。</p>
+                    <a class="play" href="https://codecombat.com/">play</a>
+                </div>
+
+
+                <div class="game game2">
+                    <h3>Code Hunt</h3>
+                    <img src="/static/img/game/game2.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度： <span></span></p>
+                    <p class="desc">简介：Code Hunt 是一个由Microsoft Research开发的 HTML5 科幻主题游戏。</p>
+                    <a class="play" href="https://www.codehunt.com/">play</a>
+                </div>
+
+
+                <div class="game game3">
+                    <h3>CodinGame</h3>
+                    <img src="/static/img/game/game3.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度： <span></span></p>
+                    <p class="desc">简介：CodinGame 对程序员来说是一个挑战，如果你想提升编程技能，玩CodinGame。</p>
+                    <a class="play" href="https://www.codingame.com/start">play</a>
+                </div>
+
+
+                <div class="game game4">
+                    <h3>Screeps</h3>
+                    <img src="/static/img/game/game4.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度： <span></span></p>
+                    <p class="desc">简介：Screeps 是一个为 JavaScript 程序员准备的大型多人在线游戏(MMO)。</p>
+                    <a class="play" href="https://screeps.com/">play</a>
+                </div>
+
+
+                <div class="game game5">
+                    <h3>FightCode</h3>
+                    <img src="/static/img/game/game5.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度： <span></span></p>
+                    <p class="desc">简介：在 FightCode 中，目的很简单，就是创建一个能够击败其他玩家机器人的机器人。</p>
+                    <a class="play" href="http://fightcodegame.com/">play</a>
+                </div>
+
+
+
+                <div class="game game5">
+                    <h3>FightCode</h3>
+                    <img src="/static/img/game/game5.jpg" alt="" width="200" height="160">
+                    <p>难&nbsp;&nbsp;&nbsp;&nbsp;度： <span></span></p>
+                    <p>推荐度： <span></span></p>
+                    <p class="desc">简介：在 FightCode 中，目的很简单，就是创建一个能够击败其他玩家机器人的机器人。</p>
+                    <a class="play" href="http://fightcodegame.com/">play</a>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--内容 end-->
+
+
+
+    <!--右侧图标 start-->
+    <div class="fixRight">
+        <ul>
+            <li>
+                <a href="javascript:void(0);" class="erweima">
+                    <div class="erweima2Box"><img src="/static/img/erweima.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="/notice.html" class="yijianfankui"></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="returntop" style="display:none;"></a>
+            </li>
+        </ul>
+    </div>
+    <!--右侧图标 end-->
+
+
+
+    <!--尾部 start-->
+    <footer>
+        <div class="foot">
+            <div class="footbar">
+                <br />
+                <br />
+                <a href="/static/a/foot/about.html">本站结构</a>
+                <a href="/static/a/foot/course.html">本站历程</a>
+                <a href="/static/login.html">意见反馈</a>
+                <a href="http://127.0.0.1/login.html">关于我们</a>
+            </div>
+            <div class="footbar">
+                <!--版权信息-->
+                网站备案号：
+                <a href="http://www.miitbeian.gov.cn">豫ICP备16005082号-2</a>
+            </div>
+        </div>
+    </footer>
+    <!--尾部结束-->
+
+</body>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+
+<script src="/static/js/common.js"></script>
+
+<script>
+    console.log($);
+</script>
+
+</html>

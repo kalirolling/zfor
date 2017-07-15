@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="zfor,在线,想法,设计,代码,zfor.org,源码资料,编程游戏,zfor 网站,code,想法,ui,deram" />
+    <meta name="description" content="zfor是一个免费共享的资料和游戏平台，从想法到设计之代码，zfor.org网站在逐步努力成为更好！zfor完善了游戏列表，网站资料交流..." />
+    <title>zfor 源码资料编程游戏平台</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" 　/>
+    <link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+
+</head>
+
+<body>
+    <!--头部 start-->
+    <header>
+        <div class="top">
+
+            <div id="logo">
+                <a href="/"><img src="/static/img/logo.png" alt="zfor.org" title="首页" /></a>
+            </div>
+            <div class="menu nav">
+                <ul>
+                    <li><a href="/static/a/head/lesson.html"><span>教程</span></a></li>
+                    <li><a href="/static/a/head/note.html"><span>笔记</span></a></li>
+                    <li><a href="/static/a/head/test.html"><span>测试</span></a></li>
+                    <li><a href="/static/a/head/war.html"><span>实战</span></a></li>
+                </ul>
+            </div>
+
+            <div class="rightbar">
+                <a href="/static/a/head/publicity.html">网站公告</a>
+                <a href="/static/a/head/info.html">网站宣传</a>
+            </div>
+            <div class="user">
+                <button type="button" onclick="showBox()">注册/登陆</button>
+            </div>
+            <div class="event" id="login_box" style="display: none;">
+                <div class="login">
+                    <div class="title">
+                        <span class="t_txt">登录</span>
+                        <span class="del" onClick="deleteLogin()"><a href="#">X</a></span>
+                    </div>
+                    <form action="" method="post">
+                        <input type="text" name="" id="" value="" placeholder="请输入用户名" />
+                        <input type="text" name="" id="" value="" placeholder="请输入密码" />
+                        <div class="easy">
+                            <input type="checkbox" class="check" id="c" name="" value=""> <label for="c">下次自动登陆</label><span>忘记密码</span>
+                        </div>
+
+                        <input type="button" name="" id="" value="登录" class="btn" />
+
+                    </form>
+                </div>
+            </div>
+            <div class="bg_color" onClick="deleteLogin()" id="bg_filter" style="display: none;"></div>
+
+
+        </div>
+
+    </header>
+
+    <!--头部 end-->
+
+    <!--内容 start-->
+
+    <div id="container">
+        <!--幻灯片 start-->
+        <div id="list" style="left: -1366px;">
+
+            <img src="/static/img/good/8.jpg" alt="" />
+
+            <img src="/static/img/good/1.jpg" alt="" />
+            <img src="/static/img/good/2.jpg" alt="" />
+            <img src="/static/img/good/3.jpg" alt="" />
+            <img src="/static/img/good/4.jpg" alt="" />
+            <img src="/static/img/good/5.jpg" alt="" />
+            <img src="/static/img/good/6.jpg" alt="" />
+            <img src="/static/img/good/7.jpg" alt="" />
+            <img src="/static/img/good/8.jpg" alt="" />
+
+            <img src="/static/img/good/1.jpg" alt="" />
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+            <span index="6"></span>
+            <span index="7"></span>
+            <span index="8"></span>
+        </div>
+        <a href="javascript:;" class="arrow" id="prev">&lt;</a>
+        <a href="javascript:;" class="arrow" id="next">&gt;</a>
+        <!--幻灯片 end-->
+
+    </div>
+
+    <div class="contain">
+
+        <div class="show">
+            <h3>感觉到本网站很不满意？</h3>
+            <h3>联系我<span>QQ:994507178</span></h3>
+            <div class="showtext clearfix">
+                <p>一开始我开始搭建这个网站的时候还不知道要在这上面放些什么内容，有时甚至只是抄袭一些网上的好看的素材来完成这个网站的外观，现在内容和分类都还没有决定下来。我一个人很容易陷入误区，来和我一起讨论合作吧。</p>
+                <p>每一个人都有自己的想法，所以世上也没有相同的两片树叶。我们总要学会委曲求全，求同存异。怀着平常心的态度去看待它，凡事只需尽力八分，成败自有天意。</p>
+            </div>
+            <p class="say">但求无愧于心...</p>
+        </div>
+        <!--主体 start-->
+        <div class="note">
+
+
+
+            <!--测试题 start-->
+
+            <div class="grid">
+                <ul>
+                    <li>
+                        <div class="port effect-1">
+                            <a href="/static/a/">
+                                <div class="image-box">
+                                    <img src="/static/img/idea.jpg" alt="Image-1">
+                                </div>
+                                <div class="text_desc">
+                                    <h3>想法</h3>
+                                    <p>想法就是每一个个体根据自己的记忆或外部感官获得信息后，依照本身多年来构成的世界观、道德观、价值观等等来判断后从而做出的选择。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="port effect-2">
+                            <a href="/static/draw/beautiful.html">
+                                <div class="image-box">
+                                    <img src="/static/img/ui.jpg" alt="Image-2">
+                                </div>
+                                <div class="text_desc">
+                                    <h3>设计</h3>
+                                    <p>设计是 把一种设想 通过合理的规划 周密的计划 通过各种感觉形式传达出来的过程。</p>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="port effect-3">
+                            <div class="image-box">
+                                <img src="/static/img/code.jpg" alt="Image-3">
+                            </div>
+                            <div class="text_desc">
+                                <h3>编程</h3>
+                                <p>编程就是让计算机为解决某个问题，对某个计算体系规定一定的运算方式.是计算体系按照该计算方式运行，并最终得到相应结果的过程。</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--测试题 end-->
+
+            <!--游戏 start-->
+            <div class="game item">
+                <h2 class="tit">编程游戏推荐</h2>
+                <p>这些WEB游戏非常有趣，可以把你带入迷人的编程世界。</p>
+                <div class="gameshow">
+                    <p>适度的玩游戏可以让我们：</p>
+                    <p>1.更快的反应速度</p>
+                    <p>2.更加专心于一件事</p>
+                    <p>3.增强与人交流的能力</p>
+                    <p>4.学到人生道理</p>
+                    <p>5.享受快乐</p>
+                    <p>6.更好的视力</p>
+                    <p>7.让你变聪明</p>
+                    <p>8.学会团队合作</p>
+                    <p>9.产生正面情感</p>
+                    <p>10.增加事务的好奇心</p>
+                </div>
+                <a class="gamepage" href="/static/a/game/gamepage.html">网页游戏</a>
+                <a class="gamePC" href="/static/a/game/gamePC.html">本机游戏</a>
+
+            </div>
+            <!--游戏 end-->
+
+            <!--访问量 start-->
+            <div class="people item">
+                <h2 class="tit">网站访问量</h2>
+                <div class="titbtn">
+                    <a class="onep" href="#">个人访问量</a>
+                    <a class="morep" href="#">网站总访问量</a>
+                </div>
+                <div class="peopleimg">
+                    <div class="boximg boximg1">
+                        <h3 class="name">黑色</h3>
+                        <p class="source">分数：<span>232</span></p>
+                        <p class="user_desc">343223</p>
+                        <p>来帮助我吧！</p>
+                        <div class="headimg">
+                            <span></span><img src="/static/img/game.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="boximg boximg2">
+
+                        <h3>232</h3>
+                        <p>232</p>
+                        <p>343223</p>
+                        <p>来帮助我吧！</p>
+                    </div>
+                    <div class="boximg boximg3">
+
+                        <h3>232</h3>
+                        <p>232</p>
+                        <p>343223</p>
+                        <p>来帮助我吧！</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--访问量 start-->
+
+            <!--信息 start-->
+
+            <section>
+
+                <h2>公告</h2>
+                <div class="article">
+                    <div class="news list">
+                        <h3>新闻</h3>
+                        <ul>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="front list">
+                        <h3>新闻sda</h3>
+                        <ul>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                        </ul>
+                    </div>
+                    <div class="end list">
+                        <h3>后端</h3>
+                        <ul>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                            <li><b><i></i>&lt;前端&gt;</b><a href="#">2017年前sdasd端测试题</a> <span>xxx</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <!--信息 end-->
+
+
+
+        </div>
+        <!--主体 end-->
+        <div>
+            <p>
+                你信不信我摸着网线去打你，一句笑话，也证实了现在信息化时代的特性。自从用上无线传输信息，那么在这个未知的信号里的信息是危险的。
+            </p>
+            <a href="/login.html" style="color:red">管理员登陆</a>
+        </div>
+
+    </div>
+    <!--内容 end-->
+
+
+
+    <!--右侧图标 start-->
+    <div class="fixRight">
+        <ul>
+            <li>
+                <a href="javascript:void(0);" class="erweima">
+                    <div class="erweima2Box"><img src="/static/img/erweima.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="/notice.html" class="yijianfankui"></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="returntop" style="display:none;"></a>
+            </li>
+        </ul>
+    </div>
+    <!--右侧图标 end-->
+
+    <!--尾部 start-->
+    <footer>
+        <div class="foot">
+            <div class="footbar">
+                <br />
+                <br />
+                <a href="/static/a/foot/about.html">本站结构</a>
+                <a href="/static/a/foot/course.html">本站历程</a>
+                <a href="/static/login.html">意见反馈</a>
+                <a href="/static/login.html">关于我们</a>
+            </div>
+            <div class="footbar">
+                <!--版权信息-->
+                网站备案号：
+                <a href="http://www.miitbeian.gov.cn">豫ICP备16005082号-2</a>
+            </div>
+        </div>
+    </footer>
+    <!--尾部结束-->
+
+</body>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/carousel.js"></script>
+
+</html>

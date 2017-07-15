@@ -1,0 +1,73 @@
+.news {
+    margin-left: 100px;
+    width: 800px;
+    background-color: #fff;
+}
+
+.newstop ul {
+    margin-top: 20px;
+}
+
+.newstop li {
+    float: left;
+    margin: 10px 0;
+    padding: 0 10px;
+    border-right: 1px solid gray;
+}
+
+.newslist {
+    overflow: hidden;
+    clear: both;
+    border: 1px linear #f2f2f2;
+}
+
+.newslist .cell {
+    padding: 0 10px;
+    height: 90px;
+    width: 800px;
+    border-top: 1px solid #e2e2e2;
+}
+
+.cell .headimg {
+    float: left;
+}
+
+.cell .headimg img {
+    margin-top: 5px;
+    width: 80px;
+    height: 80px;
+}
+
+.main {
+    padding-top: 8px;
+    float: right;
+    width: 80%;
+    margin-right: 40px;
+}
+
+.main .tit {
+    font-size: 20px;
+}
+
+.main .tar {
+    margin: 10px;
+}
+
+.tar i {
+    margin: 0 4px 0 10px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: blue;
+}
+
+.main .tar span {
+    width: auto;
+    padding: 2px;
+    border-radius: 30%;
+    background-color: pink;
+}
+
+.main b {
+    float: right;
+}

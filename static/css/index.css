@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+/*轮播图 start*/
+
+#container {
+    background-color: none;
+    overflow: hidden;
+    position: relative;
+    width: 1366px;
+    height: 320px;
+    margin: 10px auto 0;
+    border-radius: 2px 2px;
+}
+
+#list {
+    width: 13660px;
+    height: 320px;
+    position: absolute;
+    z-index: 1;
+}
+
+#list img {
+    float: left;
+    width: 1366px;
+    height: 320px;
+}
+
+#buttons {
+    position: absolute;
+    height: 10px;
+    width: 200px;
+    z-index: 2;
+    bottom: 16px;
+    right: 20px;
+}
+
+#buttons span {
+    cursor: pointer;
+    float: left;
+    border: 1px solid rgba(255, 255, 255, .7);
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, .4);
+}
+
+#buttons .on {
+    background: rgba(245, 95, 37, .8);
+}
+
+.arrow {
+    cursor: pointer;
+    display: none;
+    line-height: 39px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 36px;
+    width: 40px;
+    height: 90px;
+    border-radius: 6px;
+    line-height: 90px;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+
+.wrap {
+    position: relative;
+    width: 200px;
+    z-index: 3;
+}
+
+
+/*轮播图 end*/
+
+
+/* show start */
+
+.show {
+    margin: 20px 0;
+}
+
+.show h3 {
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 43px;
+    letter-spacing: .8em;
+    text-align: center;
+}
+
+.show span {
+    color: #8605b6;
+    letter-spacing: .2em;
+}
+
+.say {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.showtext {
+    width: 860px;
+    margin: 10px auto;
+}
+
+.showtext p {
+    width: 400px;
+    float: left;
+}
+
+.showtext p:nth-child(2) {
+    float: right;
+}
+
+
+/* show end */
+
+
+/*测试题 start*/
+
+.note section {
+    margin-top: 20px;
+}
+
+.grid {
+    overflow: hidden;
+}
+
+.grid,
+.port,
+.port .text_desc {
+    box-sizing: border-box;
+}
+
+.port a {
+    cursor: pointer;
+}
+
+.grid ul {
+    margin: 0 -1.5%;
+}
+
+.grid li {
+    float: left;
+    width: 31.33%;
+    margin: 10px 1%;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.grid h3 {
+    font-size: 20px;
+    margin: 5px 0 10px;
+}
+
+.grid p {
+    font-weight: 300;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.grid .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #fff;
+    border: 2px solid #4d92d9;
+    background-color: #4d92d9;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.grid .btn:hover {
+    background-color: transparent;
+    color: #4d92d9;
+    transition: 0.4s;
+}
+
+.grid .text_desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+    padding: 10px;
+    text-indent: 2em;
+}
+
+.port {
+    float: left;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    perspective: 500px;
+    height: 130px;
+}
+
+.port img {
+    width: 100%;
+    height: 130px;
+    transition: 0.5s;
+}
+
+.port.effect-1 .text_desc {
+    z-index: -1;
+    transition: 0.5s;
+    transform: rotateX(80deg);
+    transform-origin: center top 0;
+    padding: 15px 20px 20px;
+    opacity: 1;
+}
+
+.port.effect-1:hover .text_desc {
+    transform: none;
+}
+
+.port.effect-1:hover img {
+    opacity: 0;
+    transform: scale(1.2)
+}
+
+.port.effect-2 .text_desc {
+    z-index: -1;
+    transition: 0.5s;
+    transform: rotateX(80deg);
+    transform-origin: center bottom 0;
+    top: auto;
+    bottom: 0;
+    padding: 15px 20px 20px;
+}
+
+.port.effect-2:hover .text_desc {
+    transform: none;
+    opacity: 1;
+}
+
+.port.effect-2:hover img {
+    transform: translateY(-100%)
+}
+
+.port.effect-3 .text_desc {
+    z-index: -1;
+    transition: 0.5s;
+    transform: rotateX(80deg);
+    transform-origin: center top 0;
+    padding: 15px 20px 20px;
+}
+
+.port.effect-3:hover .text_desc {
+    transform: none;
+    opacity: 1;
+}
+
+.port.effect-3:hover img {
+    transform: translateY(100%)
+}
+
+
+/*测试题结束*/
+
+
+/*game start*/
+
+.game {
+    position: relative;
+}
+
+.game a {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    height: 30px;
+    position: absolute;
+    bottom: 30%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 900;
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+.game a.gamepage {
+    left: 40%;
+    background: url(/static/img/gamebtn.png) 0 0 no-repeat;
+}
+
+.game a.gamePC {
+    left: 60%;
+    background: url(/static/img/gamebtn.png) 0 0 no-repeat;
+}
+
+
+/*game end*/
+
+
+/*people start*/
+
+.item .tit {
+    height: 90px;
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 32px;
+    text-align: center;
+    color: #111;
+}
+
+.item .titbtn {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.item .titbtn a {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: red;
+    text-align: center;
+    margin: 0 15px;
+    cursor: pointer;
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.peopleimg {
+    height: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.boximg {
+    float: left;
+    width: 300px;
+    height: 400px;
+    padding: 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin: 10px 0 0 80px;
+    overflow: hidden;
+}
+
+.boximg h3 {
+    font-size: 25px;
+}
+
+.boximg .source span {
+    font-size: 16px;
+    color: red;
+}
+
+.boximg:hover {
+    border: 2px solid blue;
+}
+
+.headimg {
+    overflow: hidden;
+}
+
+.boximg .headimg img {
+    width: 300px;
+    height: 200px;
+}
+
+
+/*people end*/
+
+
+/*文章列表 start*/
+
+.article {
+    overflow: hidden;
+}
+
+.article div {
+    width: 360px;
+    float: left;
+    text-align: center;
+    margin: 10px 18px;
+    /*box-shadow: 0 0 10px 5px #d1d1d1;*/
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.article .news,
+.article .front,
+.article .end {
+    background: url(/static/img/list_bg.jpg) 0 0 no-repeat;
+}
+
+.article ul {
+    overflow: hidden;
+    width: 320px;
+    margin: 0 auto;
+}
+
+.article li b {
+    font-size: 12px;
+    float: left;
+    color: #fe6c33;
+}
+
+.article li {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.article ul li:nth-child(6),
+.article ul li:nth-child(11),
+.article ul li:nth-child(16) {
+    margin-top: 10px;
+}
+
+.article ul li i {
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background: url(/static/img/tit_desc_li.png) 0 4px no-repeat;
+}
+
+.article li a {
+    color: #000;
+    float: left;
+    margin-left: 16px;
+}
+
+.article li span {
+    font-size: 12px;
+    float: right;
+    color: gray;
+}
+
+.list {
+    position: relative;
+}
+
+.list h3 {
+    font-size: 16px;
+    line-height: 24px;
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+
+/*文章列表end*/

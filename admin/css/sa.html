@@ -1,0 +1,76 @@
+可以这样实现： ``` package main import ( "fmt" "log" "net/http" "github.com/go-http-utils/cors" ) func main() { httpServeMux := http.NewServeMux() httpServeMux.HandleFunc("/upload", Login) httpServeMux.HandleFunc("/register", Register) httpServeMux.Handle("/Zxx/",
+http.StripPrefix("/Zxx/", http.FileServer(http.Dir("Vercity"))))　　//添加html文件 httpServeMux.Handle("/Yxx/", http.StripPrefix("/Yxx/", http.FileServer(http.Dir("Yxx")))) //添加 a 链接html文件 fmt.Println("服务已启动...") Corshandler := cors.Handler(httpServeMux, cors.SetMethods([]string{"GET",
+"POST", "JBA"})) err := http.ListenAndServe(":8000", Corshandler) if err != nil { log.Fatal(err) } } func checkErr(err error) { //错误处理 if err != nil { log.Println(err) } } func Login(w http.ResponseWriter, r *http.Request) { //响应 Login 函数 userName :=
+r.FormValue("username") passwd := r.FormValue("userpasswd") //genecap := c.FormValue("genecaptcha") fmt.Println(userName) fmt.Println(passwd) } func Register(w http.ResponseWriter, r *http.Request) { //响应 Register 函数 username := r.FormValue("r_username")
+passwd := r.FormValue("r_userpasswd") passwd_ag := r.FormValue("ra_userpasswd") mail := r.FormValue("ra_email") fmt.Println(username) fmt.Println(passwd) fmt.Println(passwd_ag) fmt.Println(mail) } ``` ========== Zxx 文件夹的 index.html 这样写 ===================
+```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>认证登录</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="登录" /> </head>
+
+<body>
+    <!--header start here-->
+    <div class="login-form">
+        <h1>登录</h1>
+        <div class="login-top">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="login-ic"> <i></i> <input type="text" name="username" }/>
+                    <div class="clear"> </div>
+                </div>
+                <div class="login-ic"> <i class="icon"></i> <input type="password" name="userpasswd" }/>
+                    <div class="clear"> </div>
+                </div>
+                <div class="log-bwn"> <input type="submit" value="Login"> </div class="log-bwn">
+                <div class="regist-link"><a href="//127.0.0.1:8000/Yxx/" clstag="pageclick|keycount|201607144|8" target="_blank" style="outline: 0px none rgb(109, 109, 109);"><b></b>立即注册</a></div>
+        </div>
+        </form>
+    </div>
+    </div>
+    <!--header start here-->
+</body>
+
+</html> ``` ========== Yxx文件夹的 index.html 这样写 =================== ```
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>个人注册</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="注册" /> </head>
+
+<body>
+    <!--header start here-->
+    <div class="login-form">
+        <h1>注册</h1>
+        <div class="login-top">
+            <form action="/register" method="post" enctype="multipart/form-data">
+                <div class="form-item form-item-account" id="form-item-account"> <label>用　户　名</label> <input type="text" name="r_username" }/>
+                    <div class="clear"> </div>
+                </div>
+                <div class="form-item"> <label>设 置 密 码</label> <input type="text" name="r_userpasswd" } />
+                    <div class="clear"> </div>
+                </div>
+                <div class="form-item"> <label>确 认 密 码</label> <input type="text" name="ra_userpasswd" } />
+                    <div class="clear"> </div>
+                </div>
+                <div class="form-item"> <label>注 册 邮 箱</label> <input type="text" name="ra_email" }/>
+                    <div class="clear"> </div>
+                </div>
+                <div> <input type="submit" class="btn-register" value="Register"> </div>
+            </form>
+        </div>
+    </div>
+    <!--header start here-->
+</body>
+
+</html> ``` Zxx文件夹(含有CSS文件、index.html文件、images图片文件) Yxx文件夹(含有CSS文件、index.html文件、images图片文件)，保证Zxx文件夹和Yxx文件夹和main.go文件在同一目录下 至于对应的CSS文件自己定制就可以了。 效果图 1）Login ![11.jpg](http://studygolang.qiniudn.com/170705/c7cb3d9e68c81963423ade61b91e76ab.jpg) 2）Register ![22.png](http://studygolang.qiniudn.com/170705/030af2fb03899dc1c7890494b17e5149.png)

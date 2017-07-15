@@ -1,0 +1,268 @@
+/*common*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+b {
+    font-weight: normal;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.view {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header*/
+
+.top {
+    height: 30px;
+    overflow: hidden;
+    background-color: #aa5524;
+}
+
+.top i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    overflow: hidden;
+}
+
+.left .exit {
+    background: url(../img/top.png) 0 0 no-repeat;
+}
+
+.left .setting {
+    background: url(../img/top.png) 0 -30px no-repeat;
+}
+
+.left .save {
+    background: url(../img/top.png) 0 -60px no-repeat;
+}
+
+.right p {
+    line-height: 30px;
+}
+
+.right .email {
+    background: url(../img/top.png) 0 -90px no-repeat;
+    float: right;
+}
+
+
+/*contain*/
+
+.contain .tit {
+    background-color: #192e40;
+    border: 2px solid #3d466c;
+    border-bottom: none;
+    height: 24px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.note {
+    width: 20%;
+    height: 100%;
+    background: black;
+}
+
+.notes {
+    width: 100%;
+    height: 100%;
+}
+
+.notes .part {
+    background-color: #0c3448;
+    min-height: 60px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.notes .del {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../img/delete.png) 0 0 no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.notes pre {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.note .bot a {
+    display: inline-block;
+    float: left;
+}
+
+.bot .add {
+    width: 56%;
+    background-color: #303335;
+    border: 2px solid #3d466c;
+    border-bottom: none;
+}
+
+.bot .close {
+    width: 40%;
+    background-color: #303335;
+    border: 2px solid #3d466c;
+    border-bottom: none;
+}
+
+.add i,
+.close i {
+    display: inline-block;
+    float: left;
+    width: 16px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.add i {
+    background-color: #05adf5;
+}
+
+.close i {
+    background-color: #602324;
+}
+
+
+/*middle*/
+
+.main {
+    width: 50%;
+    height: 600px;
+    position: relative;
+}
+
+.info {
+    width: 100%;
+    height: 140px;
+    background-color: #000;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.info img {
+    margin: 10px;
+}
+
+.user {
+    position: absolute;
+    left: 160px;
+    top: 54px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.username {
+    margin-top: 10px;
+}
+
+.user .ip {
+    font-size: 18px;
+}
+
+.remind {
+    width: 100%;
+    height: 26px;
+    background-color: #00b9fb;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+.nav ul {
+    margin-top: 100px;
+    margin-left: 40px;
+}
+
+.nav a {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    margin: 4px 0;
+    border: 1px solid #fff;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.nav a.quit {
+    height: 20px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.nav a i {
+    display: inline-block;
+    width: 14px;
+    height: 100%;
+    background-color: blue;
+    margin-right: 20px;
+    float: left;
+}
+
+.nav a i.red {
+    margin-right: 10px;
+    background: #5b2122;
+}
+
+.line {
+    width: 100%;
+    height: 200px;
+    background: url(../img/line.jpg) 0 0 no-repeat;
+}
+
+
+/*right*/
+
+.terr {
+    width: 30%;
+    height: 600px;
+}
+
+.terr p {
+    color: #fff;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="zfor,在线,想法,设计,代码,zfor.org,源码资料,编程游戏,zfor 网站,code,想法,ui,deram" />
+    <meta name="description" content="zfor是一个免费共享的资料和游戏平台，从想法到设计之代码，zfor.org网站在逐步努力成为更好！zfor完善了游戏列表，网站资料交流..." />
+    <title>zfor 源码资料编程游戏平台</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="bookmark" href="/favicon.ico" type="image/x-icon" 　/>
+    <link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/note.css" />
+
+
+</head>
+
+<body>
+
+    <!--头部 start-->
+    <header>
+        <div class="top">
+
+            <div id="logo">
+                <a href="/"><img src="/static/img/logo.png" alt="zfor.org" title="首页" /></a>
+            </div>
+            <div class="menu nav">
+                <ul>
+                    <li><a href="/static/a/head/lesson.html"><span>教程</span></a></li>
+                    <li><a href="/static/a/head/note.html"><span>笔记</span></a></li>
+                    <li><a href="/static/a/head/test.html"><span>测试</span></a></li>
+                    <li><a href="/static/a/head/war.html"><span>实战</span></a></li>
+                </ul>
+            </div>
+
+            <div class="rightbar">
+                <a href="/static/a/head/publicity.html">网站公告</a>
+                <a href="/static/a/head/info.html">网站宣传</a>
+            </div>
+            <div class="user">
+                <button type="button" onclick="showBox()">注册/登陆</button>
+            </div>
+            <div class="event" id="login_box" style="display: none;">
+                <div class="login">
+                    <div class="title">
+                        <span class="t_txt">登录</span>
+                        <span class="del" onClick="deleteLogin()"><a href="#">X</a></span>
+                    </div>
+                    <form action="" method="post">
+                        <input type="text" name="" id="" value="" placeholder="请输入用户名" />
+                        <input type="text" name="" id="" value="" placeholder="请输入密码" />
+                        <div class="easy">
+                            <input type="checkbox" class="check" id="c" name="" value=""> <label for="c">下次自动登陆</label><span>忘记密码</span>
+                        </div>
+
+                        <input type="button" name="" id="" value="登录" class="btn" />
+
+                    </form>
+                </div>
+            </div>
+            <div class="bg_color" onClick="deleteLogin()" id="bg_filter" style="display: none;"></div>
+
+
+        </div>
+
+    </header>
+
+    <!--头部 end-->
+
+    <!--内容 start-->
+    <div class="contain">
+        <div class="news">
+            <div class="newstop">
+                <ul>
+                    <li><a href="">全部</a></li>
+                    <li><a href="">科技 </a></li>
+                    <li><a href="">UI</a></li>
+                    <li><a href="">前端</a></li>
+                    <li><a href="">后端</a></li>
+                    <li><a href="">安全</a></li>
+                    <li><a href="">架构</a></li>
+                </ul>
+            </div>
+
+            <div class="newslist">
+
+                <div class="cell">
+
+                    <div class="headimg">
+                        <a href="/static/a/note/1.html">
+                            <img src="/static/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="main">
+                        <a href="/static/a/note/1.html">
+                            <h3 class="tit">本网站知识简介</h3>
+                        </a>
+                        <div class="tar">
+                            <span>网站</span><i></i><a href="#" class="name">neeo</a><i></i><a href="#" class="name">golang</a> <b>2017-2-2</b>
+                        </div>
+                        <p class="pre">本站....</p>
+                    </div>
+
+                </div>
+
+                <div class="cell">
+                    <div class="headimg">
+                        <img src="/static/img/logo.jpg" alt="">
+                    </div>
+                    <div class="main">
+                        <h3 class="tit">12121sdsdsdsdsdsdsddsdsdsdsd2</h3>
+                        <div class="tar">
+                            <span>科技</span><i></i><a href="#" class="name">neeo</a> <b>2017-2-2</b>
+                        </div>
+                        <p class="pre">dfsdfsdfsdfsdfsdfsdfsdfsfsfsdf....</p>
+
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <div class="headimg">
+                        <img src="/static/img/logo.jpg" alt="">
+                    </div>
+                    <div class="main">
+                        <h3 class="tit">12121sdsdsdsdsdsdsddsdsdsdsd2</h3>
+                        <div class="tar">
+                            <span>科技</span><i></i><a href="#" class="name">neeo</a> <b>2017-2-2</b>
+                        </div>
+                        <p class="pre">dfsdfsdfsdfsdfsdfsdfsdfsfsfsdf....</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--内容 end-->
+
+
+
+    <!--右侧图标 start-->
+    <div class="fixRight">
+        <ul>
+            <li>
+                <a href="javascript:void(0);" class="erweima">
+                    <div class="erweima2Box"><img src="/static/img/erweima.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="/notice.html" class="yijianfankui"></a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="returntop" style="display:none;"></a>
+            </li>
+        </ul>
+    </div>
+    <!--右侧图标 end-->
+
+
+    <!--尾部 start-->
+    <footer>
+        <div class="foot">
+            <div class="footbar">
+                <br />
+                <br />
+                <a target="_black" href="/static/img/web.png">本站结构</a>
+                <a href="/static/a/foot/course.html">本站历程</a>
+                <a href="/404.html">意见反馈</a>
+                <a href="/404.html">关于我们</a>
+            </div>
+            <div class="footbar">
+                <!--版权信息-->
+                网站备案号：
+                <a href="http://www.miitbeian.gov.cn">豫ICP备16005082号-2</a>
+            </div>
+        </div>
+    </footer>
+    <!--尾部结束-->
+
+
+
+</body>
+
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/common.js"></script>
+
+
+</html>

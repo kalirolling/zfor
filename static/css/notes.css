@@ -1,0 +1,43 @@
+.v_nav {
+    padding-left: 300px;
+}
+
+.v_nav li {
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.v_nav li a {
+    margin: 0 20px;
+    font-size: 22px;
+    color: #353535;
+    height: 45px;
+    line-height: 45px;
+    font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "\9ED1\4F53", Arial, sans-serif;
+    letter-spacing: .2px;
+    font-weight: 300;
+}
+
+
+/* 左侧 start */
+
+.v_left {
+    width: 270px;
+    height: 420px;
+    background-color: yellow;
+    overflow-y: scroll;
+}
+
+
+/* 左侧 end */
+
+.v_right {
+    width: 1000px;
+    height: 420px;
+    margin-left: 30px;
+    background-color: pink;
+}
+
+.v_main {
+    float: left;
+}

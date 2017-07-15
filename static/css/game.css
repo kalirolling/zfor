@@ -1,0 +1,63 @@
+.game {
+    width: 200px;
+    height: 340px;
+    overflow: hidden;
+    background-color: none;
+    border-radius: 6px;
+    box-shadow: 6px 6px 12px #c2c2c2;
+    float: left;
+    margin: 10px 0 30px 40px;
+}
+
+.game h3 {
+    margin-top: 4px;
+}
+
+.game a {
+    display: inline-block;
+    padding-top: 10px;
+    width: 100%;
+    font-weight: 900;
+    color: #fff;
+    height: 60px;
+    cursor: pointer;
+    font-family: Arial;
+    background-color: blue;
+}
+
+.game a.download {
+    background: url(/static/img/download.png) 0 0 no-repeat;
+}
+
+.game img {
+    padding-top: 10px;
+}
+
+.game p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.game p.desc {
+    height: 50px;
+    overflow: hidden;
+}
+
+.game p:hover {
+    color: orange;
+}
+
+.game p span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/static/img/rating.png) no-repeat;
+    cursor: pointer;
+}
+
+
+/*rating start*/
